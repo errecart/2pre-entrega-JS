@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/trabajo.css">
+</head>
+
+<body>
+    <div id="nav">
+        <nav class="navB navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class=" titulo navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <header id="header">
+        <div class="infoP">
+            <img src="img/img-fondo.jpg"
+                alt="perscepcion sobre lo que piensan la spersonas al estar en algun tipo de prueba">
+            </img>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, omnis! Explicabo odit veniam,
+                at
+                ea assumenda sit nihil possimus dolorum voluptatum inventore. Commodi eius modi at eum enim corporis
+
+            </p>
+        </div>
+        <section id="formCuenta">
+            <h3>Cuenta</h3>
+            <form action="">
+                <label for="usuario">Usuario</label>
+                <input id="usuario" type="text"><br>
+
+                <label for="email">Email</label>
+                <input id="email" type="email"><br>
+
+                <label for="contrasenia">Contrasenia</label>
+                <input id="contrasenia" type="password">
+
+                <input type="button" id="enviar" value="enviar">
+
+                <input type="button" id="borrarCuenta" value="borrarCuenta">
+                <p class="deseaBorrar">desea borrar las cuentas existentes?</p>
+            </form>
+        </section>
+    </header>
+    <main id="main">
+        <section id="juegos">
+            <section id="Juego1">
+                <div id="Layer1">
+                    <h2>Juego1: Sos una Patty o una Selma?</h2>
+                    <div class="datos">
+                        <img src="img/img-pregunta1/foto1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, consequuntur asperiores
+                            corrupti dolor ipsa omnis hic consectetur odio est animi inventore laborum repellendus eius
+                            assumenda commodi vel numquam? Eum, facere!</p>
+                    </div>
+                    <div class="contenido">
+                        <!-- <div class="listaP1">
+                            <ul>
+                                <li class="listaPA"><a href="#p1">Pregunta1</a></li>
+                                <li class="listaPA"><a href="#p2">Pregunta2</a></li>
+                                <li class="listaPA"><a href="#p3">Pregunta3</a></li>
+                                <li class="listaPA"></li>
+                            </ul>
+                        </div> -->
+                        <div class="preguntasA">
+                            <h4>pregunta1</h4>
+                            <form>
+                                <h5>Que destino te gusta mas?</h5>
+                                <select id="p1">
+                                    <option class="oP10" value="">seleccionar</option>
+                                    <option class="oP11" value="Ciudad"><span style='font-size:100px;'>&#11088;</span>
+                                    </option>
+                                    <option class="oP12" value="Playa"><span style='font-size:100px;'>&#9996;</span>
+                                    </option>
+                                    <option class="oP13" value="Montania"><span style='font-size:100px;'>&#9995;</span>
+                                    </option>
+                                    <option class="oP14" value="Selva"><span style='font-size:100px;'>&#9994;</span>
+                                    </option>
+                                    <option class="oP15" value="Descierto"><span style='font-size:100px;'>&#9997;</span>
+                                    </option>
+                                </select>
+                                <button type="button" id="resultado1" value="CalcularResultado">RESULTADO</button>
+                                <p id="infoQ1"></p>
+                            </form>
+                            <h4>pregunta2</h4>
+                            <form>
+                                <h4>Que tipo de comida te gusta?</h4>
+                                <select id="p2">
+                                    <option value="">seleccionar</option>
+                                    <option class="oP6" value="Carne">+</option>
+                                    <option class="oP7" value="Verdura">-</option>
+                                    <option class="oP8" value="Pescado">/</option>
+                                    <option class="oP9" value="Fruta">*</option>
+                                </select>
+                                <button type="button" id="resultado2" value="CalcularResultado">RESULTADO</button>
+                                <p id="infoQ2"></p>
+                            </form>
+                            <h4>pregunta3</h4>
+                            <form>
+                                <h4>Que animal sos?</h4>
+                                <select id="p3">
+                                    <option value="">seleccionar</option>
+                                    <option class="oP1" value="Felino">A</option>
+                                    <option class="oP2" value="Canino">B</option>
+                                    <option class="oP3" value="Ave">C</option>
+                                    <option class="oP4" value="Pez">D</option>
+                                    <option class="oP5" value="insecto">E</option>
+                                </select>
+                                <button type="button" id="resultado3" value="CalcularResultado">RESULTADO</button>
+                                <p id="infoQ3"></p>
+                            </form>
+                            <h4>pregunta4</h4>
+                            <form>
+                                <h4>elija uno de los siguientes colores</h4>
+                                <select id="p4">
+                                    <option value="">seleccionar</option>
+                                    <option class="oP16" value="Rojo">Rojo</option>
+                                    <option class="oP17" value="Dorado">Dorado</option>
+                                    <option class="oP18" value="Celeste">Celeste</option>
+                                    <option class="oP19" value="Verde">Verde</option>
+                                </select>
+                                <button type="button" id="resultado4" value="CalcularResultado">RESULTADO</button>
+                                <p id="infoQ4"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <div class="gracias">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita fugiat quo vel cupiditate, sed sint,
+            nobis qui aliquid impedit ipsa veniam laborum illum aut praesentium mollitia debitis illo quis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid delectus omnis quibusdam,
+            voluptatum non nulla laborum ipsum, laudantium architecto accusantium ipsa soluta itaque reprehenderit
+            maiores ducimus ex veritatis deleniti.
+        </p>
+    </div>
+    <div id="footerF"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="java/trabajo.js"></script>
+</body>
+
+</html>
